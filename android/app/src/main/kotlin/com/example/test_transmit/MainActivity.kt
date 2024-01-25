@@ -65,7 +65,10 @@ class MainActivity: FlutterActivity(), ITSIdentityVerificationStatus {
     }
 
     override fun verificationFail(p0: TSIdentityVerificationError) {
-        println("verification fail")
-        Log.d("verificationCanceled", "verificationCanceled")
+        println("verificationFail start")
+        println(p0.name)
+        println(p0.declaringClass)
+        println(p0.ordinal)
+        println("verificationFail end")
     }
 }
